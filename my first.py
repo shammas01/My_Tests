@@ -1,16 +1,16 @@
-# sep(), end() <><><>><><><><>><><><><><
+# # sep(), end() <><><>><><><><>><><><><><
 
 # print("shammas", "kaleel", "fahad", end=" * ")
 # print("age","number","address")
 
 
-# user input
+# # user input
 
 
 # name = input ("ENTER YOUR NAME:")
 # print("hi ", name)
 
-# method-1   ><><><><>>>>><><><><><><><>><
+# # method-1   ><><><><>>>>><><><><><><><>><
 
 # Num1 = int (input("enter num1"))
 # Num2 = input ("enter num2") 
@@ -18,14 +18,14 @@
 # print("result is :", sum)
 
 
-# #method-2  ><><><><><><><><><><><><><><><
+# # #method-2  ><><><><><><><><><><><><><><><
 
 # print("enter two number")
 # num1,num2=input(),input()
 # print("result :", int(num1)+int(num2))
 
 
-# Basic data Type  <><><><><><><>><><><><><
+# # Basic data Type  <><><><><><><>><><><><><
 
 # a = "shammas"
 # b=5
@@ -56,6 +56,7 @@
 
 
 # string <><><>>><><><><><><><><><><><>
+
 # string words have index value
 
 # (" "), (""" """)
@@ -78,7 +79,7 @@
 
 # (list), (tuple), (set), (dict)
 
-# [list] >>>>>> append(), insert(), remove(), clear(), del()
+# # [list] >>>>>> append(), insert(), remove(), clear(), del()
 
 # list1=["apple","banana","orange"]
 # list2=[10,20,30,40]
@@ -87,23 +88,25 @@
 # list1.insert(2,"cabage") 
 # list1[1]="shmmas"
 # list1.remove("shmmas")
-# list1.clear()
+
+# # list1.clear()
+# print(len(list1))
 # #del list1
 
-# print( list1)
+# print(list1)
 
-# for x in list1:
+# for x in list2:
 #   print(x)
 
 # (Tuple) ><><><> this canot add or delete content 
 
 
-# tuple1=("apple","banana","orenge")
-# tuple2=(5,3,6,9,4)
-# tuple3=(tuple1+tuple2)
+tuple1={'key':[("apple","banana","orenge",2)],'key2':[("suchin","vaishnav","shammas",2)]}
+tuple2=(5,3,6,9,4)
+tuple3=dict((tuple1+tuple2))
+print(tuple1)
 
-
-# print(tuple3)
+print(tuple3)
 
 
 # Set >>>>>>>>  ()  add, remove, discard, pop, clear, union,
@@ -870,11 +873,11 @@
 # # Now when we call the original function, we get the new behavior
 # print(original_function())  # Output: "Goodbye, world!"
 
-for num in range(10):
-    if num < 5:
-        continue
-    elif num > 8:
-        break
-    print(num,end='')
+# for num in range(10):
+#     if num < 5:
+#         continue
+#     elif num > 8:
+#         break
+#     print(num,end='')
 
 
