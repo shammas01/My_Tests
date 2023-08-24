@@ -111,16 +111,16 @@ print(tuple3)
 
 # Set >>>>>>>>  ()  add, remove, discard, pop, clear, union,
 
-# set1={"apple","banana","orange"}
+set1={"apple","banana","orange"}
 
-# print("banana" in set1)
-# set1.add("shammas")
-# set1.update(["ab","bc","cd"])
-# set1.clear()
-# print(set1)
-# print(set1)
-# for x in set1:
-#  print(x)
+print("banana" in set1)
+set1.add("shammas")
+set1.update(["ab","bc","cd"])
+set1.clear()
+print(set1)
+print(set1)
+for x in set1:
+ print(x)
 
 
 # Dictinory ><><><><><><>
