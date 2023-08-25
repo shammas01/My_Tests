@@ -125,42 +125,42 @@ for x in set1:
 
 # Dictinory ><><><><><><>
 
-# dict1={
-#     "name" : "shammas",
-#     "age" : 24,
-#     "address" : "vavad"
-# }
-# print(dict1.values())
-# dict1["name"]="fiyas"
-# print(dict1)
+dict1={
+    "name" : "shammas",
+    "age" : 24,
+    "address" : "vavad"
+}
+print(dict1.values())
+dict1["name"]="fiyas"
+print(dict1)
 
-# for x,y in dict1.items():
-#     print(x,y)
+for x,y in dict1.items():
+    print(x,y)
 # ><>>>>><><><><>>>>>>>><><><<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>><<<<<<<<
 
 # if else statement ><><><><><><><>><><<>><
 
 
-# a= int ( input("enter a number"))
+a= int ( input("enter a number"))
 
-# if a > 0:
-#     print("posetive number")
-# elif a < 0:
-#     print("negative number")
-# else:
-#      print("zero")
+if a > 0:
+    print("posetive number")
+elif a < 0:
+    print("negative number")
+else:
+     print("zero")
 
 # nested if else statement <<<<<>>>>>>
 
-# a= int (input("enter a number"))
+a= int (input("enter a number"))
 
-# if a >= 0:
-#     if a > 0:
-#         print("posative number")
-#     else:
-#         print("zero")
-# else:
-#     print("negative number")
+if a >= 0:
+    if a > 0:
+        print("posative number")
+    else:
+        print("zero")
+else:
+    print("negative number")
 
 
 # Loop ><><><>><><><><><><>><><><><><><
