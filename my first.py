@@ -166,39 +166,39 @@ else:
 # Loop ><><><>><><><><><><>><><><><><><
 # while, for in,
 
-# a=1 
-# while a <= 5:
-#     print(a)
-#     a+=1
+a=1 
+while a <= 5:
+    print(a)
+    a+=1
 
-# a =["shammas","apple","orenge","banana"]
+a =["shammas","apple","orenge","banana"]
 
-# for x in a:
-#     print(x)
+for x in a:
+    print(x)
 
-# for x in range(1,10): 
-#     print(x)        
+for x in range(1,10): 
+    print(x)        
 
 
 # Functions >>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<
 
-# def a(b,c,d):
-#     print("hello "+ b + c + d)
+def a(b,c,d):
+    print("hello "+ b + c + d)
 
-# a("shammas"," vavad"," koduavally")
-# a("asda"," aadadf"," adfadf")
+a("shammas"," vavad"," koduavally")
+a("asda"," aadadf"," adfadf")
 
 
-# num1=int (input("first number"))
-# num2=int(input("second number"))
+num1=int (input("first number"))
+num2=int(input("second number"))
 
-# def sum(num1,num2,):
+def sum(num1,num2,):
 
-#     sum=num1+num2
-#     print(sum)
-#     return sum
+    sum=num1+num2
+    print(sum)
+    return sum
 
-# sum(num1,num2)    
+sum(num1,num2)    
 
 # ><><><><>>><><><><><>><><><><><><>.<><><><><><><><><><>
 
