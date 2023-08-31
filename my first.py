@@ -233,33 +233,33 @@ print(factorial(4))
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-# a=-5
-# if a>=0:
+a=-5
+if a>=0:
 
-#     if a>0:
+    if a>0:
 
-#         print("posative")
-#     else:
-#         print("zero")
+        print("posative")
+    else:
+        print("zero")
 
-# else:
-#     print("negative")            
+else:
+    print("negative")            
 
 # <<<<<<>>>>>>>>>>><<<<<<<<<<<<>>>>>>>>>>>>>>>>>><<<<<<<<<<<>>>>>>>>>
 
-# for x in range(10,20):
-#     print(x,end=",")
+for x in range(10,20):
+    print(x,end=",")
 
 # >>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>><<<<<<<<
 
-# def shammas(c):
+def shammas(c):
 
-#     if c==1:
-#         return c
-#     else:
-#         return c + shammas(c-1)
+    if c==1:
+        return c
+    else:
+        return c + shammas(c-1)
 
-# print(shammas(4))
+print(shammas(4))
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
