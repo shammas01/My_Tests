@@ -291,30 +291,30 @@ print(shammas(4))
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> OOPS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
-# class Bikes:
-#     def __init__(self, name ,price, color) -> None:
-#         self.name = name
-#         self.price = price
-#         self.colo = color
+class Bikes:
+    def __init__(self, name ,price, color) -> None:
+        self.name = name
+        self.price = price
+        self.colo = color
 
-#     def start(self):
-#         print(self.name + " engin started")
+    def start(self):
+        print(self.name + " engin started")
 
-#     def run(self):
-#         print(self.name + " running") 
+    def run(self):
+        print(self.name + " running") 
 
-#     def stop(self):
-#         print(self.name + " stoped")        
+    def stop(self):
+        print(self.name + " stoped")        
 
 
-# bike1= Bikes(" glamor",52655,"red")
-# bike2= Bikes(" splender",265484,"green")
-# bike1.price="150000"
-# bike2.colo="blue"
-# del bike1.price
+bike1= Bikes(" glamor",52655,"red")
+bike2= Bikes(" splender",265484,"green")
+bike1.price="150000"
+bike2.colo="blue"
+del bike1.price
 
-# print(bike1.name,  bike1.colo, bike1.price,end="  #")
-# print(bike2.name, bike2.colo, bike2.price)
+print(bike1.name,  bike1.colo, bike1.price,end="  #")
+print(bike2.name, bike2.colo, bike2.price)
 
 
 # bike1.start()
