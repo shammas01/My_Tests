@@ -206,22 +206,22 @@ sum(num1,num2)
 # Recursion >>>>>>>><<<<<<<<
 
 
-# def recursion(num):
-#     if num == 1 :
-#         return num
-#     else:
-#         return num + recursion(num-1)
+def recursion(num):
+    if num == 1 :
+        return num
+    else:
+        return num + recursion(num-1)
 
-# print (recursion(3))
+print (recursion(3))
 
 
-# def factorial(n):
-#     if n == 0:
-#         return 1
-#     else:
-#         return n * factorial(n-1)
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
 
-# print(factorial(4))
+print(factorial(4))
 
 # a={"shammas" :"muhammed",    #>
 # "vavad 16 ":"koduvally"}     #>
