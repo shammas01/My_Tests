@@ -317,13 +317,13 @@ print(bike1.name,  bike1.colo, bike1.price,end="  #")
 print(bike2.name, bike2.colo, bike2.price)
 
 
-# bike1.start()
-# bike1.run()
-# bike1.stop()
+bike1.start()
+bike1.run()
+bike1.stop()
 
-# bike2.start()
-# bike2.run()
-# bike2.stop()
+bike2.start()
+bike2.run()
+bike2.stop()
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -331,38 +331,38 @@ print(bike2.name, bike2.colo, bike2.price)
 
 
 # < parent class >
-# class Person:
-#     def __init__(self,name,contact) -> None:
-#         self.name = name
-#         self.contact = contact
+class Person:
+    def __init__(self,name,contact) -> None:
+        self.name = name
+        self.contact = contact
 
-#     def   address(self):
-#         print(self.name , self.contact)  
+    def   address(self):
+        print(self.name , self.contact)  
 
 # # < Child class >
 
-# class Doctor(Person):
-#     pass
+class Doctor(Person):
+    pass
 
-# class Employee(Person):
-#     pass
+class Employee(Person):
+    pass
 
-# class Patiant(Person):
-#     pass
+class Patiant(Person):
+    pass
 
-# doc1= Doctor("shammas",62827269)
-# doc2=Doctor("fiyas",5236569812)
+doc1= Doctor("shammas",62827269)
+doc2=Doctor("fiyas",5236569812)
 
-# emp1=Employee("kuru",51684654)
-# emp2=Employee("kannamma",65484)
+emp1=Employee("kuru",51684654)
+emp2=Employee("kannamma",65484)
 
-# pati1=Patiant("ajnas",354435)
-# pati2=Patiant("kuppi",35115684)
+pati1=Patiant("ajnas",354435)
+pati2=Patiant("kuppi",35115684)
 
 
-# doc1.address()
-# emp2.address()
-# pati1.address()
+doc1.address()
+emp2.address()
+pati1.address()
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
