@@ -369,25 +369,25 @@ pati1.address()
 
 # Math function
 
-# a= min(26,226,565,56,32,596,23,5)
-# print(a)
+a= min(26,226,565,56,32,596,23,5)
+print(a)
 
-# b=pow(2,4)
-# print(b)
+b=pow(2,4)
+print(b)
 
-# import math
+import math
 
-# c= math.pi
-# print(c)
+c= math.pi
+print(c)
 
-# d= math.sqrt(100)
-# print(d)
+d= math.sqrt(100)
+print(d)
 
-# e= math.gcd(10,14)
-# print(e)
+e= math.gcd(10,14)
+print(e)
 
-# import mymodule
-# mymodule.messege("shammas")
+import mymodule
+mymodule.messege("shammas")
 
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
