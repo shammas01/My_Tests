@@ -394,26 +394,26 @@ mymodule.messege("shammas")
 
 # input function
 
-# num1=float( input("enter first number"))
-# num2=float( input("enter second number"))
-# sum=num1+num2
-# print(sum)
+num1=float( input("enter first number"))
+num2=float( input("enter second number"))
+sum=num1+num2
+print(sum)
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 # File handling
 
-# a= open("smaple.txt", "a")
-# a.write("learn c++ programming\n")
-# a.close()
+a= open("smaple.txt", "a")
+a.write("learn c++ programming\n")
+a.close()
 
-# print("shammas")
+print("shammas")
 
-# def a(f):
-#    b =f**f
-#    print((b))
+def a(f):
+   b =f**f
+   print((b))
 
-# a(5)
+
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<
 # fruits = frozenset(["apple", "banana", "orange"])
