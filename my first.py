@@ -416,12 +416,12 @@ def a(f):
 
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<
-# fruits = frozenset(["apple", "banana", "orange"])
+fruits = frozenset(["apple", "banana", "orange"])
 
-# print(type(fruits))
+print(type(fruits))
 
-# print("pear" in fruits)
-# print("apple" in fruits)
+print("pear" in fruits)
+print("apple" in fruits)
 
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<
