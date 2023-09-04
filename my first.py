@@ -487,27 +487,27 @@ for value in my_iterator:
 #   >>>>>OOPS<<<<<<
 
 
-# class Bike:
+class Bike:
 
-#     def __init__(self,name,dob):
-#         self.name=name
-#         self.dob=dob
+    def __init__(self,name,dob):
+        self.name=name
+        self.dob=dob
 
 
-#     def start(self):
-#         print("started")
+    def start(self):
+        print("started")
 
-#     def print_details(self):
-#         print("bike name is {} and year is {}".format(self.name, self.dob)) #calling calss Argument with format()
+    def print_details(self):
+        print("bike name is {} and year is {}".format(self.name, self.dob)) #calling calss Argument with format()
 
-# a= Bike("glamor",2021)  #creting object and passing class method and proporties
-# b= Bike("pulsor",2018)
+a= Bike("glamor",2021)  #creting object and passing class method and proporties
+b= Bike("pulsor",2018)
 
-# print(a.dob)
-# print(a.name)
-# a.start()
-# a.print_details()
-# b.print_details()
+print(a.dob)
+print(a.name)
+a.start()
+a.print_details()
+b.print_details()
 
 # <><><><><>>><><><><>><><><><><><><><><
 
