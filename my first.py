@@ -511,23 +511,23 @@ b.print_details()
 
 # <><><><><>>><><><><>><><><><><><><><><
 
-# class Account:
-#     def __init__(self, account_number, account_balance):
-#         self.text = None
-#         self.account_number = account_number
-#         self.account_balance = account_balance
+class Account:
+    def __init__(self, account_number, account_balance):
+        self.text = None
+        self.account_number = account_number
+        self.account_balance = account_balance
 
-#     def withdraw(self, amount):
-#         if self.account_balance - amount > 0:
-#             self.account_balance = self.account_balance - amount
-#         else:
-#             print("withdrawel falied")
+    def withdraw(self, amount):
+        if self.account_balance - amount > 0:
+            self.account_balance = self.account_balance - amount
+        else:
+            print("withdrawel falied")
 
-#     def deposit(self, amount):
-#         self.account_balance = self.account_balance + amount
+    def deposit(self, amount):
+        self.account_balance = self.account_balance + amount
 
-#     def display(self):
-#         print("account balance is {}".format(self.account_balance))
+    def display(self):
+        print("account balance is {}".format(self.account_balance))
 
 
 # account_one = Account("shammas", 10000)
