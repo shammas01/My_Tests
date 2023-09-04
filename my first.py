@@ -103,10 +103,9 @@
 
 tuple1={'key':[("apple","banana","orenge",2)],'key2':[("suchin","vaishnav","shammas",2)]}
 tuple2=(5,3,6,9,4)
-tuple3=dict((tuple1+tuple2))
+# tuple3=dict((tuple1+tuple2))
 print(tuple1)
-
-print(tuple3)
+# print(tuple3)
 
 
 # Set >>>>>>>>  ()  add, remove, discard, pop, clear, union,
@@ -311,7 +310,7 @@ bike1= Bikes(" glamor",52655,"red")
 bike2= Bikes(" splender",265484,"green")
 bike1.price="150000"
 bike2.colo="blue"
-del bike1.price
+# del bike1.price
 
 print(bike1.name,  bike1.colo, bike1.price,end="  #")
 print(bike2.name, bike2.colo, bike2.price)
@@ -386,8 +385,8 @@ print(d)
 e= math.gcd(10,14)
 print(e)
 
-import mymodule
-mymodule.messege("shammas")
+# import mymodule
+# mymodule.messege("shammas")
 
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
@@ -426,22 +425,22 @@ print("apple" in fruits)
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<
 
-# import random
+import random
 
-# print(random.randrange(1000,9999))
+print(random.randrange(1000,9999))
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 # genarator <><><><><><
 
-# def a():
-#     yield "hallo"
-#     yield "abc"
-#     yield "shmmas"
-# b=a()
-# print(next(b))
-# print(next(b))
-# print(next(b))
+def a():
+    yield "hallo"
+    yield "abc"
+    yield "shmmas"
+b=a()
+print(next(b))
+print(next(b))
+print(next(b))
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
