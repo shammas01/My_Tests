@@ -446,12 +446,12 @@ print(next(b))
 
 # arbitery keyword argument <><><>><><>><>
 
-# def a(**y):
-#     for key, value in y.items():
-#         print(f"{key} = {value}")
+def a(**y):
+    for key, value in y.items():
+        print(f"{key} = {value}")
 
 
-# a(name="shammmas",age=26,place="vavad")
+a(name="shammmas",age=26,place="vavad")
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
@@ -460,27 +460,27 @@ print(next(b))
 
 # Iterator <<>><>><><><><<>><
 
-# class MyIterator:
-#     def __init__(self, data):
-#         self.index = 0
-#         self.data = data
+class MyIterator:
+    def __init__(self, data):
+        self.index = 0
+        self.data = data
 
-#     def __iter__(self):
-#         return self
+    def __iter__(self):
+        return self
 
-#     def __next__(self):
-#         if self.index >= len(self.data):
-#             raise StopIteration
-#         result = self.data[self.index]
-#         self.index += 1
-#         return result
+    def __next__(self):
+        if self.index >= len(self.data):
+            raise StopIteration
+        result = self.data[self.index]
+        self.index += 1
+        return result
 
 #  Using the iterator
-# my_list = [1, 2, 3, 4, 5]
-# my_iterator = MyIterator(my_list)
+my_list = [1, 2, 3, 4, 5]
+my_iterator = MyIterator(my_list)
 
-# for value in my_iterator:
-#     print(value)
+for value in my_iterator:
+    print(value)
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
