@@ -530,16 +530,16 @@ class Account:
         print("account balance is {}".format(self.account_balance))
 
 
-# account_one = Account("shammas", 10000)
-# account_two = Account("fiyas", 5000)
+account_one = Account("shammas", 10000)
+account_two = Account("fiyas", 5000)
 
-# amount = int(input("enter withdraw amount"))
-# account_one.withdraw(amount)
-# account_one.display()
+amount = int(input("enter withdraw amount"))
+account_one.withdraw(amount)
+account_one.display()
 
-# Damount = int(input("enter deposit amount"))
-# account_one.deposit(Damount)
-# account_one.display()
+Damount = int(input("enter deposit amount"))
+account_one.deposit(Damount)
+account_one.display()
 
 
 # >>>>>>>>>>>>>>>>>>>>>>>>><><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>
