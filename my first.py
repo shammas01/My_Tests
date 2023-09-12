@@ -546,22 +546,22 @@ account_one.display()
 
 # >>>>>>>>>> EXEPTION HANDLING <<<<<<<<<<<<<
 
-# x = int(input("enter first number"))
-# y = int(input("enter second number"))
+x = int(input("enter first number"))
+y = int(input("enter second number"))
 
-# try:
-#     z = x / y
+try:
+    z = x / y
 
 
 
-# except:
-#     z = x
+except:
+    z = x
 
-# else:
-#     print("no exception")
-# finally:
-#     print("final block")
-#     print(z)
+else:
+    print("no exception")
+finally:
+    print("final block")
+    print(z)
 
 # >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
