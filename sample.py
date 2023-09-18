@@ -1,7 +1,7 @@
 
 
 #1
-n=5
+# n=5
 
 # for i in range(n):
 #     for j in range(i+1):
@@ -87,22 +87,51 @@ n=5
 
 
 # Butter fly >>>>>>>>>>>>>>>>>>>>>>>>
-for i in range(n-1):
-    for j in range(i+1):
-        print('* ',end='')
-    for j in range(((n-i)*2)-2):
-        print('  ',end='')
-    for j in range(i+1):
-        print('* ',end='')
-    print()
 
-for i in range(n):
-    for j in range(n-i):
-        print('* ',end="")
-    for j in range(i*2):
-        print('  ',end='')
-    for j in range(i,n):
-        print('* ',end='')
-    print()    
+# for i in range(n-1):
+#     for j in range(i+1):
+#         print('* ',end='')
+#     for j in range(((n-i)*2)-2):
+#         print('  ',end='')
+#     for j in range(i+1):
+#         print('* ',end='')
+#     print()
+
+# for i in range(n):
+#     for j in range(n-i):
+#         print('* ',end="")
+#     for j in range(i*2):
+#         print('  ',end='')
+#     for j in range(i,n):
+#         print('* ',end='')
+#     print()    
 
 
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+
+
+# find prime or non prime>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# num = int(input('enter a positive number '))
+
+# if num>1:
+#     for i in range(2,num):
+#         if num % i == 0:
+#             print(num,'is a not prime number')
+#             break
+#     else:
+#         print(num,'is a prime number')
+
+# find odd or even >>>>>>>>>>        
+num = int(input('enter a positive number '))
+if num>1:
+    if num%2==0:
+        print(num,'is even number')
+        
+    else:
+        print(num,'is odd number')
+else:       
+    print('enter Greater than 1')
+
+         
