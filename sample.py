@@ -87,7 +87,7 @@
 
 
 # Butter fly >>>>>>>>>>>>>>>>>>>>>>>>
-
+# n=5
 # for i in range(n-1):
 #     for j in range(i+1):
 #         print('* ',end='')
@@ -112,7 +112,8 @@
 
 
 
-# find prime or non prime>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# find prime or non prime >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 # num = int(input('enter a positive number '))
 
 # if num>1:
@@ -123,15 +124,195 @@
 #     else:
 #         print(num,'is a prime number')
 
-# find odd or even >>>>>>>>>>        
-num = int(input('enter a positive number '))
-if num>1:
-    if num%2==0:
-        print(num,'is even number')
+# find odd or even >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>       
+# num = int(input('enter a positive number '))
+# if num>1:
+#     if num%2==0:
+#         print(num,'is even number')
         
-    else:
-        print(num,'is odd number')
-else:       
-    print('enter Greater than 1')
+#     else:
+#         print(num,'is odd number')
+# else:       
+#     print('enter Greater than 1')
 
-         
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+
+
+#print Key value pare in Dic >>>>>>>
+# dic = {'X':1,'Y':2}
+# for key,value in dic.items():
+#     print(f"key:{key}, value:{value}")
+
+
+
+#iterator>>>>>>>>>>>>>>>>>>
+# a = [1,2,3,4,5,6,76]
+# iter_object =iter(a)
+# print(next(iter_object))
+# print(next(iter_object))
+
+# while True:
+#     try:
+#         element = next(iter_object)
+#         print(element)
+#     except StopIteration:
+#         break
+
+
+#generator>>>>>>>>>>>>>>
+
+# def fibonacci():
+#     a, b = 0, 1
+#     while True:
+#         yield a
+#         a, b = b, a + b
+
+# fib_sequence = fibonacci()
+
+# print(next(fib_sequence))
+# print(next(fib_sequence))
+# print(next(fib_sequence))
+# print(next(fib_sequence))
+# print(next(fib_sequence))
+
+
+
+# pakage and module
+
+
+# print(dir('__module__'))
+# import sys
+# sys
+# print(dir(sys))
+# from new import Prime_or_not
+
+# print(dir())
+
+
+# coprehentions >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+fruits = ['apple','bannana','orang','kiwi','cherry','mango']
+
+# new_list = []
+# for i in fruits:
+#     if not 'a' in i:
+#         new_list.append(i)
+
+# print(new_list)
+
+# this is actually list comprahention>>>>>>>>>>>>
+
+# new_list=(each_fruit for each_fruit in fruits if 'a' in each_fruit) # its working like generator
+# new_list=[each_fruit for each_fruit in fruits if 'a' in each_fruit] #its list comprahention
+# new_list=tuple(each_fruit for each_fruit in fruits if 'a' in each_fruit) #its tuple comprahention
+# new_list={each_fruit for each_fruit in fruits if 'a' in each_fruit} #set comprehetion
+# new_list={each_fruit:'5' for each_fruit in fruits if 'a' in each_fruit} # dictionarty comprehetion
+# print(new_list)
+
+# print(next(new_list))
+# print(next(new_list))
+
+
+# x = 123123121234
+
+# # for i in str(x):
+# #     print(i) 
+# # list1 =tuple(int(i) if int(i)%2==0  else 'x' for i in str(x))
+# # print(list1)
+
+
+# v = {'a': 1, 'b': 2}
+# x=v['b']
+# del v['b']
+# v['c']=x
+# print(v)
+
+# # Create a new dictionary with the key 'c' and the value associated with 'b'
+# new_v = {key if key != 'b' else 'c': value for key, value in v.items()}
+
+# # Print the new dictionary
+# print(new_v)
+
+# for key,value in v.items():
+
+#     print(key,value)
+
+
+
+# x={letter for letter in 'you are my best friend' if letter in 'mbest'}
+# print(x)
+
+
+# y={x:x*x for x in range(10)}
+# print(y)
+
+
+
+
+
+
+
+
+
+
+
+
+
+# Regular Expretion >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+'|,\,?,$,^,+,.,*,(),{}'
+
+# import re
+# x = '^Q....P..H$'
+# z= 'QabchP23H'
+# y = re.match(x,z)
+# if y:
+#     print('successfull')
+# else:
+#     print('unsuccessfull')
+
+#>>>>>>>>>>>>>>>>>match()
+# import re
+# input = 'you world you are my best friend'
+# result = re.match(r"[you]",input)
+# print(result) 
+
+#>>>>>>>>>>>>>>>>search()
+# import re
+# input = 'you world you are my best friend'
+# result = re.search(r"[zi]",input)
+# print(result) 
+
+#>>>>>>>>>>>>>>>>findall( )
+# import re
+
+# input = 'you world you are my best friend'
+# result = re.findall(r"[ra]",input)
+# print(result)
+
+
+#>>>>>>>>>>>>>>>>>
+# import re
+
+# input = 'you world you are my best friend'
+# result = re.findall(r"..",input)
+# print(result)
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# ^ reprasenting starts with and exact
+# $ representing ends with and exact
+# import re
+
+# input = 'your'
+# result = re.search(r"^y..r$",input)
+# print(result)
+
+
+#>>>>>>>>>>>>>>>>>>>
+
+import re
+input = 'yoootoor'
+result = re.search(r"^yoooto*r$",input)
+print(result)
