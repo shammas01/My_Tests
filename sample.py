@@ -310,9 +310,36 @@ fruits = ['apple','bannana','orang','kiwi','cherry','mango']
 # print(result)
 
 
-#>>>>>>>>>>>>>>>>>>>
+#>>>>>>>>>>>>>>>>>>>(*)
+# import re
+# input = 'yooooor'
+# result = re.search(r"^yo*r$",input)
+# print(result)
 
+
+#>>>>>>>>>>>>>>>>>(+)
+# import re
+# input = 'yooooor'
+# result = re.search(r"^yo+r$",input)
+# print(result)
+
+
+# #>>>>>>>>>>>>>>>>>(?)
+# import re
+# input = 'yasdor'
+# result = re.search(r"yasdo?r",input)
+# print(result)
+
+#>>>>>>>>>>>>>>>>({})
+# import re
+# input = 'iam mam'
+# result = re.search(r"m{1,2}",input)
+# print(result)
+
+#>>>>>>>>>>>>>>>([]{}) for find indiger number
 import re
-input = 'yoootoor'
-result = re.search(r"^yoooto*r$",input)
-print(result)
+input = 'hi mom iam 262345asdf2345234'
+result_one_digit = re.search(r"[0-9]{1,1}",input)
+result_tree_digit = re.search(r"[0-9]{1,3}",input)
+print(result_one_digit,'\n',result_tree_digit)
+
