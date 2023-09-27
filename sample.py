@@ -337,9 +337,37 @@ fruits = ['apple','bannana','orang','kiwi','cherry','mango']
 # print(result)
 
 #>>>>>>>>>>>>>>>([]{}) for find indiger number
-import re
-input = 'hi mom iam 262345asdf2345234'
-result_one_digit = re.search(r"[0-9]{1,1}",input)
-result_tree_digit = re.search(r"[0-9]{1,3}",input)
-print(result_one_digit,'\n',result_tree_digit)
+# import re
+# input = 'hi mom iam 262345asdf2345234'
+# result_one_digit = re.search(r"[0-9]{1,1}",input)
+# result_tree_digit = re.search(r"[0-9]{1,3}",input)
+# print(result_one_digit,'\n',result_tree_digit)
 
+# >>>>>>>>>>>>>>>(\A,\b)
+# import re
+# # input = 'iam your son'
+# # result = re.search(r'\Aiam your',input)
+# # result2 = re.search(r'\byou',input)
+# # print(result,result2)
+
+# print(dir(re))
+
+
+
+
+
+#serialization in python >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+import pickle
+
+x = open("pickled.txt","wb")
+dic = {"name":"shammas","age":26}
+y = pickle.dump(dic,x)
+if y is None:
+    print("data is dumped u cannot see that")
+x.close()
+
+
+j = open("pickled.txt","rb")
+i = pickle.load(j)
+print(i)
+j.close()
