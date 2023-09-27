@@ -357,17 +357,47 @@ fruits = ['apple','bannana','orang','kiwi','cherry','mango']
 
 
 #serialization in python >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# import pickle dumps, loads
+
+# x = open("pickled.txt","wb")
+# dic = {"name":"shammas","age":26}
+# y = pickle.dump(dic,x)
+# if y is None:
+#     print("data is dumped u cannot see that")
+# x.close()
+
+
+# j = open("pickled.txt","rb")
+# i = pickle.load(j)
+# print(i)
+# j.close()
+
+# from pickle import dumps,loads
+# dic = {"name":"shammas","age":26}
+# dictstring=dumps(dic)
+# print(dictstring)
+
+# x=loads(dictstring)
+# print(x)
+
 import pickle
+def stordata():
 
-x = open("pickled.txt","wb")
-dic = {"name":"shammas","age":26}
-y = pickle.dump(dic,x)
-if y is None:
-    print("data is dumped u cannot see that")
-x.close()
+    person1 ={"name":"shammas","age":24}
+    person2 ={"name":"vaishnav","age":23}
+
+    db ={}
+    db['person1'] = person1
+    db['person2'] = person2
+
+    dbfiel=open('examplepickle','ab')
+
+    dumpfiel = pickle.dump(db,dbfiel)
+    dbfiel.close()
+
+    print(dumpfiel)
+
+    
 
 
-j = open("pickled.txt","rb")
-i = pickle.load(j)
-print(i)
-j.close()
