@@ -398,6 +398,16 @@ def stordata():
 
     print(dumpfiel)
 
+stordata()
+
+def LoadData():
+    dbfile = open('examplepickle','rb')
+    loaded_file = pickle.load(dbfile)
+    print(loaded_file)
+    dbfile.close()
+
+LoadData()    
+
     
 
 
