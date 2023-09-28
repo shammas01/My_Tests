@@ -190,7 +190,7 @@
 # print(dir())
 
 
-# coprehentions >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# coprehentions >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 fruits = ['apple','bannana','orang','kiwi','cherry','mango']
 
@@ -201,9 +201,10 @@ fruits = ['apple','bannana','orang','kiwi','cherry','mango']
 
 # print(new_list)
 
-# this is actually list comprahention>>>>>>>>>>>>
+# this is comprahentions >>>>>>>>>>>>
 
 # new_list=(each_fruit for each_fruit in fruits if 'a' in each_fruit) # its working like generator
+
 # new_list=[each_fruit for each_fruit in fruits if 'a' in each_fruit] #its list comprahention
 # new_list=tuple(each_fruit for each_fruit in fruits if 'a' in each_fruit) #its tuple comprahention
 # new_list={each_fruit for each_fruit in fruits if 'a' in each_fruit} #set comprehetion
@@ -261,7 +262,7 @@ fruits = ['apple','bannana','orang','kiwi','cherry','mango']
 
 # Regular Expretion >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-'|,\,?,$,^,+,.,*,(),{}'
+"|,\,?,$,^,+,.,*,(),{}"
 
 # import re
 # x = '^Q....P..H$'
@@ -381,33 +382,114 @@ fruits = ['apple','bannana','orang','kiwi','cherry','mango']
 # x=loads(dictstring)
 # print(x)
 
-import pickle
-def stordata():
 
-    person1 ={"name":"shammas","age":24}
-    person2 ={"name":"vaishnav","age":23}
+#>>>>>>>>>>>>>>>>>>>>>>>>>
 
-    db ={}
-    db['person1'] = person1
-    db['person2'] = person2
 
-    dbfiel=open('examplepickle','ab')
+# import pickle
+# def stordata(): #serialization
 
-    dumpfiel = pickle.dump(db,dbfiel)
-    dbfiel.close()
+#     person1 ={"name":"shammas","age":24}
+#     person2 ={"name":"vaishnav","age":23}
 
-    print(dumpfiel)
+#     db ={}
+#     db['person1'] = person1
+#     db['person2'] = person2
 
-stordata()
+#     dbfiel=open('examplepickle','ab')
 
-def LoadData():
-    dbfile = open('examplepickle','rb')
-    loaded_file = pickle.load(dbfile)
-    print(loaded_file)
-    dbfile.close()
+#     dumpfiel = pickle.dump(db,dbfiel)
+#     dbfiel.close()
 
-LoadData()    
+#     print(dumpfiel)
 
+# stordata()
+
+# def LoadData():# deserialization
+#     dbfile = open('examplepickle','rb')
+#     loaded_file = pickle.load(dbfile)
+#     for keys in loaded_file:
+#         print(keys, '=>',loaded_file[keys])
+#     # print(loaded_file)
+#     dbfile.close()
+
+# LoadData()    
+
+
+# partial function>>>>>>>>>>>>>>>>>>>
+
+from functools import partial
+
+# def power(base, exponent):
+#     return base ** exponent
+
+# square = partial(power,exponent=3)
+
+# result = square(11)  
+
+# print(result)  
     
+#>>>>>>>>>>>>>>>>>>>>>>
+
+# def sample_partial(a,b): 
+#     return a+b
+
+# x = partial(sample_partial,b=10)
+
+# print(x(11,b=18))
+
+# print(sample_partial(3,6))
 
 
+# closures >>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# def outer(a):
+#     a = a
+#     def inner():
+#         print(a)
+#     inner()
+
+# closure('shammas')
+
+#>>>>>>>>>>>>>>>
+
+# def outer(x):
+#     x=x
+#     def inner():
+#         print(x) 
+#     return inner
+
+# myfunction=outer('shammas')
+# myfunction()
+
+
+
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> decerator
+
+def outer(x):
+    
+    print('outer x')
+    
+    def inner():
+        print('inner x')
+        x()
+    return inner
+
+
+@outer
+def sample():
+    print('sample x')
+    
+sample()
+
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>
+def i():
+    print('this is me i function')
+    def j():
+        print('this is me j function')
+    j()
+
+i()
