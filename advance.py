@@ -468,28 +468,132 @@ from functools import partial
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> decerator
 
-def outer(x):
+# def outer(x):
     
-    print('outer x')
+#     print('outer x')
     
-    def inner():
-        print('inner x')
-        x()
-    return inner
+#     def inner():
+#         print('inner x')
+#         x()
+#     return inner
 
 
-@outer
-def sample():
-    print('sample x')
+# @outer
+# def sample():
+#     print('sample x')
     
-sample()
+# sample()
 
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>
-def i():
-    print('this is me i function')
-    def j():
-        print('this is me j function')
-    j()
 
-i()
+# def i():
+
+#     def j():
+#         print('this is me j ')
+#         print('thank for caling me')
+
+#     print('this is the function i()')
+#     print("iam callng function 'j()' now:\n")
+#     j()
+
+# i() # its first calling j function
+#>>>>>>>>>>>>>>>>>
+
+# def temprature(t):
+#     def celsius(x):
+#         return 9 * x / 5 + 32
+    
+#     result = "it is " + str(celsius(t)) + "degrees"
+#     return result
+
+# print(temprature(20))
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+#(1)>>>
+# def factorial(n):
+#     """
+#     calculate the factorial of 'n'
+#     n should be intiger and n<=0
+#     """
+#     if n==0:
+#         return 1
+#     else:
+#         return n * factorial(n-1)
+
+# print(factorial(4))
+
+
+# # #(2) modifide (1)  >>>>>>>
+# def factorial(n):
+    
+#     if type(n) == int and n>=0:
+#         if n==0:
+#             return 1
+#         else:
+    
+#             return n * factorial(n-1)
+            
+#     else:
+#         return TypeError(" 'n' has to be a intiger and should a positive number")
+    
+# print(factorial(3))
+
+#(3) modifide (2)  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# def factorial(n):
+
+#     def inner_factorial(n):
+            
+       
+#             if n==0:
+#                 return 1
+#             else:
+        
+#                 return n * factorial(n-1)
+            
+#     if type(n) == int and n>=0:
+#           return inner_factorial(n)          
+#     else:
+#         return TypeError(" 'n' has to be a intiger and should a positive number")
+
+   
+# print(factorial(13))
+
+#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+
+# def factorial(n):
+
+#     def inner_factorial(y):
+            
+#         def super_inner(n):
+#             def very_inner(x):
+                    
+#                 if x==0:
+#                     return 1
+#                 else:
+            
+#                     return x * factorial(x-1)
+#             return very_inner(n)
+                
+#         return super_inner(y)
+           
+
+#     if type(n) == int and n>=0:
+#         return inner_factorial(int(n))          
+#     else:
+#         return TypeError(" 'n' has to be a intiger and should a positive number")   
+
+# print(factorial(13))
+
+#polinomital>>>>>>>>>>>>>>>>>
+
+def x(a,b,c):
+    def y(n):
+        return a*(n**2)+(b*n)+c
+    return y
+
+result=x(1,2,3)
+print(result(1))
+ 
