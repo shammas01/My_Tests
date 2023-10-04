@@ -62,6 +62,7 @@
 
 
 # sand galss>>>>>>>>>>>>>>>>>>>>>
+
 # for i in range(n):
 #     for j in range(i):
 #         print('  ',end='')
@@ -175,6 +176,8 @@
 # print(next(fib_sequence))
 # print(next(fib_sequence))
 # print(next(fib_sequence))
+# print(next(fib_sequence))
+
 
 
 
@@ -196,23 +199,27 @@ fruits = ['apple','bannana','orang','kiwi','cherry','mango']
 
 # new_list = []
 # for i in fruits:
-#     if not 'a' in i:
+#     if 'a' in i:
 #         new_list.append(i)
 
 # print(new_list)
 
 # this is comprahentions >>>>>>>>>>>>
 
-# new_list=(each_fruit for each_fruit in fruits if 'a' in each_fruit) # its working like generator
+new_list=(each_fruit for each_fruit in fruits if 'a' in each_fruit) # its working like generator
+print(next(new_list))
+print(next(new_list))
+print(next(new_list))
 
-# new_list=[each_fruit for each_fruit in fruits if 'a' in each_fruit] #its list comprahention
-# new_list=tuple(each_fruit for each_fruit in fruits if 'a' in each_fruit) #its tuple comprahention
-# new_list={each_fruit for each_fruit in fruits if 'a' in each_fruit} #set comprehetion
-# new_list={each_fruit:'5' for each_fruit in fruits if 'a' in each_fruit} # dictionarty comprehetion
-# print(new_list)
 
-# print(next(new_list))
-# print(next(new_list))
+new_list=[each_fruit for each_fruit in fruits if 'a' in each_fruit] #its list comprahention
+new_list=tuple(each_fruit for each_fruit in fruits if 'a' in each_fruit) #its tuple comprahention
+new_list={each_fruit for each_fruit in fruits if 'a' in each_fruit} #set comprehetion
+new_list={each_fruit:'5' for each_fruit in fruits if 'a' in each_fruit} # dictionarty comprehetion
+print(new_list)
+
+print(next(new_list))
+print(next(new_list))
 
 
 # x = 123123121234
@@ -264,94 +271,95 @@ fruits = ['apple','bannana','orang','kiwi','cherry','mango']
 
 "|,\,?,$,^,+,.,*,(),{}"
 
-# import re
-# x = '^Q....P..H$'
-# z= 'QabchP23H'
-# y = re.match(x,z)
-# if y:
-#     print('successfull')
-# else:
-#     print('unsuccessfull')
+import re
+x = '^Q....P..H$'
+z= 'QabchP23H'
+y = re.match(x,z)
+if y:
+    print('successfull')
+else:
+    print('unsuccessfull')
 
 #>>>>>>>>>>>>>>>>>match()
-# import re
-# input = 'you world you are my best friend'
-# result = re.match(r"[you]",input)
-# print(result) 
+import re
+input = 'you world you are my best friend'
+result = re.match(r"[you]",input)
+print(result) 
 
 #>>>>>>>>>>>>>>>>search()
-# import re
-# input = 'you world you are my best friend'
-# result = re.search(r"[zi]",input)
-# print(result) 
+import re
+input = 'you world you are my best friend'
+result = re.search(r"[zi]",input)
+print(result) 
 
 #>>>>>>>>>>>>>>>>findall( )
-# import re
+import re
 
-# input = 'you world you are my best friend'
-# result = re.findall(r"[ra]",input)
-# print(result)
+input = 'you world you are my best friend'
+result = re.findall(r"[ra]",input)
+print(result)
 
 
 #>>>>>>>>>>>>>>>>>
-# import re
+import re
 
-# input = 'you world you are my best friend'
-# result = re.findall(r"..",input)
-# print(result)
+input = 'you world you are my best friend'
+result = re.findall(r"..",input)
+print(result)
 
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # ^ reprasenting starts with and exact
 # $ representing ends with and exact
-# import re
 
-# input = 'your'
-# result = re.search(r"^y..r$",input)
-# print(result)
+import re
+
+input = 'your'
+result = re.search(r"^y..r$",input)
+print(result)
 
 
 #>>>>>>>>>>>>>>>>>>>(*)
-# import re
-# input = 'yooooor'
-# result = re.search(r"^yo*r$",input)
-# print(result)
+import re
+input = 'yooooor'
+result = re.search(r"^yo*r$",input)
+print(result)
 
 
 #>>>>>>>>>>>>>>>>>(+)
-# import re
-# input = 'yooooor'
-# result = re.search(r"^yo+r$",input)
-# print(result)
+import re
+input = 'yooooor'
+result = re.search(r"^yo+r$",input)
+print(result)
 
 
 # #>>>>>>>>>>>>>>>>>(?)
-# import re
-# input = 'yasdor'
-# result = re.search(r"yasdo?r",input)
-# print(result)
+import re
+input = 'yasdor'
+result = re.search(r"yasdo?r",input)
+print(result)
 
 #>>>>>>>>>>>>>>>>({})
-# import re
-# input = 'iam mam'
-# result = re.search(r"m{1,2}",input)
-# print(result)
+import re
+input = 'iam mam'
+result = re.search(r"m{1,2}",input)
+print(result)
 
 #>>>>>>>>>>>>>>>([]{}) for find indiger number
-# import re
-# input = 'hi mom iam 262345asdf2345234'
-# result_one_digit = re.search(r"[0-9]{1,1}",input)
-# result_tree_digit = re.search(r"[0-9]{1,3}",input)
-# print(result_one_digit,'\n',result_tree_digit)
+import re
+input = 'hi mom iam 262345asdf2345234'
+result_one_digit = re.search(r"[0-9]{1,1}",input)
+result_tree_digit = re.search(r"[0-9]{1,3}",input)
+print(result_one_digit,'\n',result_tree_digit)
 
 # >>>>>>>>>>>>>>>(\A,\b)
-# import re
-# # input = 'iam your son'
-# # result = re.search(r'\Aiam your',input)
-# # result2 = re.search(r'\byou',input)
-# # print(result,result2)
+import re
+# input = 'iam your son'
+# result = re.search(r'\Aiam your',input)
+# result2 = re.search(r'\byou',input)
+# print(result,result2)
 
-# print(dir(re))
+print(dir(re))
 
 
 
@@ -418,7 +426,7 @@ fruits = ['apple','bannana','orang','kiwi','cherry','mango']
 
 # partial function>>>>>>>>>>>>>>>>>>>
 
-from functools import partial
+# from functools import partial
 
 # def power(base, exponent):
 #     return base ** exponent
@@ -512,92 +520,92 @@ from functools import partial
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 # (1)>>>
-def factorial(n):
-    """
-    calculate the factorial of 'n'
-    n should be intiger and n<=0
-    """
-    if n==0:
-        return 1
-    else:
-        return n * factorial(n-1)
+# def factorial(n):
+#     """
+#     calculate the factorial of 'n'
+#     n should be intiger and n<=0
+#     """
+#     if n==0:
+#         return 1
+#     else:
+#         return n * factorial(n-1)
 
-print(factorial(4))
+# print(factorial(4))
 
 
-# # #(2) modifide (1)  >>>>>>>
+# # # #(2) modifide (1)  >>>>>>>
 
-def factorial(n):
+# def factorial(n):
     
-    if type(n) == int and n>=0:
-        if n==0:
-            return 1
-        else:
+#     if type(n) == int and n>=0:
+#         if n==0:
+#             return 1
+#         else:
     
-            return n * factorial(n-1)
+#             return n * factorial(n-1)
             
-    else:
-        return TypeError(" 'n' has to be a intiger and should a positive number")
+#     else:
+#         return TypeError(" 'n' has to be a intiger and should a positive number")
     
-print(factorial(3))
+# print(factorial(3))
 
-#(3) modifide (2)  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# #(3) modifide (2)  >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-def factorial(n):
+# def factorial(n):
 
-    def inner_factorial(n):
+#     def inner_factorial(n):
             
        
-            if n==0:
-                return 1
-            else:
+#             if n==0:
+#                 return 1
+#             else:
         
-                return n * factorial(n-1)
+#                 return n * factorial(n-1)
             
-    if type(n) == int and n>=0:
-          return inner_factorial(n)          
-    else:
-        return TypeError(" 'n' has to be a intiger and should a positive number")
+#     if type(n) == int and n>=0:
+#           return inner_factorial(n)          
+#     else:
+#         return TypeError(" 'n' has to be a intiger and should a positive number")
 
    
-print(factorial(13))
+# print(factorial(13))
 
-#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-def factorial(n):
+# def factorial(n):
 
-    def inner_factorial(y):
+#     def inner_factorial(y):
             
-        def super_inner(n):
-            def very_inner(x):
+#         def super_inner(n):
+#             def very_inner(x):
                     
-                if x==0:
-                    return 1
-                else:
+#                 if x==0:
+#                     return 1
+#                 else:
             
-                    return x * factorial(x-1)
-            return very_inner(n)
+#                     return x * factorial(x-1)
+#             return very_inner(n)
                 
-        return super_inner(y)
+#         return super_inner(y)
            
 
-    if type(n) == int and n>=0:
-        return inner_factorial(int(n))          
-    else:
-        return TypeError(" 'n' has to be a intiger and should a positive number")   
+#     if type(n) == int and n>=0:
+#         return inner_factorial(int(n))          
+#     else:
+#         return TypeError(" 'n' has to be a intiger and should a positive number")   
 
-print(factorial(13))
-
-
+# print(factorial(13))
 
 
-#polinomital>>>>>>>>>>>>>>>>>
 
-def x(a,b,c):
-    def y(n):
-        return a*(n**2)+(b*n)+c
-    return y
 
-result=x(1,2,3)
-print(result(1))
+# #polinomital>>>>>>>>>>>>>>>>>
+
+# def x(a,b,c):
+#     def y(n):
+#         return a*(n**2)+(b*n)+c
+#     return y
+
+# result=x(1,2,3)
+# print(result(1))
  
