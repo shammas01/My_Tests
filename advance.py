@@ -115,26 +115,26 @@ for i in range(n):
 
 # find prime or non prime >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-# num = int(input('enter a positive number '))
+num = int(input('enter a positive number '))
 
-# if num>1:
-#     for i in range(2,num):
-#         if num % i == 0:
-#             print(num,'is a not prime number')
-#             break
-#     else:
-#         print(num,'is a prime number')
+if num>1:
+    for i in range(2,num):
+        if num % i == 0:
+            print(num,'is a not prime number')
+            break
+    else:
+        print(num,'is a prime number')
 
 # find odd or even >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>       
-# num = int(input('enter a positive number '))
-# if num>1:
-#     if num%2==0:
-#         print(num,'is even number')
+num = int(input('enter a positive number '))
+if num>1:
+    if num%2==0:
+        print(num,'is even number')
         
-#     else:
-#         print(num,'is odd number')
-# else:       
-#     print('enter Greater than 1')
+    else:
+        print(num,'is odd number')
+else:       
+    print('enter Greater than 1')
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
