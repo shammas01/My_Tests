@@ -42,110 +42,104 @@
 
 
 #5 Diemond >>>>>>>>>>>>
-for i in range(n-1):
-    for j in range(i,n):
-        print('  ',end='')
-    for j in range(i):
-        print('* ',end='')
-    for j in range(i+1):
-        print('* ',end='')
-    print()
+# for i in range(n-1):
+#     for j in range(i,n):
+#         print('  ',end='')
+#     for j in range(i):
+#         print('* ',end='')
+#     for j in range(i+1):
+#         print('* ',end='')
+#     print()
 
-for i in range(n):
-    for j in range(i+1):
-        print('  ',end='')
-    for j in range(i,n):
-        print('* ',end='')
-    for j in range(i,n-1):
-        print('* ',end='')
-    print()
+# for i in range(n):
+#     for j in range(i+1):
+#         print('  ',end='')
+#     for j in range(i,n):
+#         print('* ',end='')
+#     for j in range(i,n-1):
+#         print('* ',end='')
+#     print()
 
 
 # sand galss>>>>>>>>>>>>>>>>>>>>>
 
-for i in range(n):
-    for j in range(i):
-        print('  ',end='')
-    for j in range(2*(n-i)-1):
-        print('* ',end='')   
-    print()
+# for i in range(n):
+#     for j in range(i):
+#         print('  ',end='')
+#     for j in range(2*(n-i)-1):
+#         print('* ',end='')   
+#     print()
 
-for i in range(n-2,-1,-1):
-    for j in range(i):
-        print('  ',end='')
-    for j in range(2*(n-i)-1):
-        print('* ',end='')
-    print()
+# for i in range(n-2,-1,-1):
+#     for j in range(i):
+#         print('  ',end='')
+#     for j in range(2*(n-i)-1):
+#         print('* ',end='')
+#     print()
 
 
-for i in range(1,6):
-    for j in range(1,6):
-        if i==3 or j==3:
-            print('0 ',end='')
-        else:
-            print('1 ',end='')
-    print()        
+# for i in range(1,6):
+#     for j in range(1,6):
+#         if i==3 or j==3:
+#             print('0 ',end='')
+#         else:
+#             print('1 ',end='')
+#     print()        
 
 
 # Butter fly >>>>>>>>>>>>>>>>>>>>>>>>
-n=5
-for i in range(n-1):
-    for j in range(i+1):
-        print('* ',end='')
-    for j in range(((n-i)*2)-2):
-        print('  ',end='')
-    for j in range(i+1):
-        print('* ',end='')
-    print()
+# n=5
+# for i in range(n-1):
+#     for j in range(i+1):
+#         print('* ',end='')
+#     for j in range(((n-i)*2)-2):
+#         print('  ',end='')
+#     for j in range(i+1):
+#         print('* ',end='')
+#     print()
 
-for i in range(n):
-    for j in range(n-i):
-        print('* ',end="")
-    for j in range(i*2):
-        print('  ',end='')
-    for j in range(i,n):
-        print('* ',end='')
-    print()    
+# for i in range(n):
+#     for j in range(n-i):
+#         print('* ',end="")
+#     for j in range(i*2):
+#         print('  ',end='')
+#     for j in range(i,n):
+#         print('* ',end='')
+#     print()    
 
-
-
-#>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+# >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 
+# # find prime or non prime >>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-# find prime or non prime >>>>>>>>>>>>>>>>>>>>>>>>>>>>
+# num = int(input('enter a positive number '))
 
-num = int(input('enter a positive number '))
+# if num>1:
+#     for i in range(2,num):
+#         if num % i == 0:
+#             print(num,'is a not prime number')
+#             break
+#     else:
+#         print(num,'is a prime number')
 
-if num>1:
-    for i in range(2,num):
-        if num % i == 0:
-            print(num,'is a not prime number')
-            break
-    else:
-        print(num,'is a prime number')
-
-# find odd or even >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>       
-num = int(input('enter a positive number '))
-if num>1:
-    if num%2==0:
-        print(num,'is even number')
+# # find odd or even >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+   
+# num = int(input('enter a positive number '))
+# if num>1:
+#     if num%2==0:
+#         print(num,'is even number')
         
-    else:
-        print(num,'is odd number')
-else:       
-    print('enter Greater than 1')
+#     else:
+#         print(num,'is odd number')
+# else:       
+#     print('enter Greater than 1')
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
 
 #print Key value pare in Dic >>>>>>>
 # dic = {'X':1,'Y':2}
 # for key,value in dic.items():
 #     print(f"key:{key}, value:{value}")
-
-
 
 #iterator>>>>>>>>>>>>>>>>>>
 # a = [1,2,3,4,5,6,76]
@@ -195,7 +189,7 @@ else:
 
 # coprehentions >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-fruits = ['apple','bannana','orang','kiwi','cherry','mango']
+# fruits = ['apple','bannana','orang','kiwi','cherry','mango']
 
 # new_list = []
 # for i in fruits:
@@ -206,20 +200,20 @@ fruits = ['apple','bannana','orang','kiwi','cherry','mango']
 
 # this is comprahentions >>>>>>>>>>>>
 
-new_list=(each_fruit for each_fruit in fruits if 'a' in each_fruit) # its working like generator
-print(next(new_list))
-print(next(new_list))
-print(next(new_list))
+# new_list=(each_fruit for each_fruit in fruits if 'a' in each_fruit) # its working like generator
+# print(next(new_list))
+# print(next(new_list))
+# print(next(new_list))
 
 
-new_list=[each_fruit for each_fruit in fruits if 'a' in each_fruit] #its list comprahention
-new_list=tuple(each_fruit for each_fruit in fruits if 'a' in each_fruit) #its tuple comprahention
-new_list={each_fruit for each_fruit in fruits if 'a' in each_fruit} #set comprehetion
-new_list={each_fruit:'5' for each_fruit in fruits if 'a' in each_fruit} # dictionarty comprehetion
-print(new_list)
+# new_list=[each_fruit for each_fruit in fruits if 'a' in each_fruit] #its list comprahention
+# new_list=tuple(each_fruit for each_fruit in fruits if 'a' in each_fruit) #its tuple comprahention
+# new_list={each_fruit for each_fruit in fruits if 'a' in each_fruit} #set comprehetion
+# new_list={each_fruit:'5' for each_fruit in fruits if 'a' in each_fruit} # dictionarty comprehetion
+# print(new_list)
 
-print(next(new_list))
-print(next(new_list))
+# print(next(new_list))
+# print(next(new_list))
 
 
 # x = 123123121234
@@ -271,95 +265,95 @@ print(next(new_list))
 
 "|,\,?,$,^,+,.,*,(),{}"
 
-import re
-x = '^Q....P..H$'
-z= 'QabchP23H'
-y = re.match(x,z)
-if y:
-    print('successfull')
-else:
-    print('unsuccessfull')
+# import re
+# x = '^Q....P..H$'
+# z= 'QabchP23H'
+# y = re.match(x,z)
+# if y:
+#     print('successfull')
+# else:
+#     print('unsuccessfull')
 
 #>>>>>>>>>>>>>>>>>match()
-import re
-input = 'you world you are my best friend'
-result = re.match(r"[you]",input)
-print(result) 
+# import re
+# input = 'you world you are my best friend'
+# result = re.match(r"[you]",input)
+# print(result) 
 
 #>>>>>>>>>>>>>>>>search()
-import re
-input = 'you world you are my best friend'
-result = re.search(r"[zi]",input)
-print(result) 
+# import re
+# input = 'you world you are my best friend'
+# result = re.search(r"[zi]",input)
+# print(result) 
 
 #>>>>>>>>>>>>>>>>findall( )
-import re
+# import re
 
-input = 'you world you are my best friend'
-result = re.findall(r"[ra]",input)
-print(result)
+# input = 'you world you are my best friend'
+# result = re.findall(r"[ra]",input)
+# print(result)
 
 
 #>>>>>>>>>>>>>>>>>
-import re
+# import re
 
-input = 'you world you are my best friend'
-result = re.findall(r"..",input)
-print(result)
+# input = 'you world you are my best friend'
+# result = re.findall(r"..",input)
+# print(result)
 
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 # ^ reprasenting starts with and exact
 # $ representing ends with and exact
 
-import re
+# import re
 
-input = 'your'
-result = re.search(r"^y..r$",input)
-print(result)
+# input = 'your'
+# result = re.search(r"^y..r$",input)
+# print(result)
 
 
 #>>>>>>>>>>>>>>>>>>>(*)
-import re
-input = 'yooooor'
-result = re.search(r"^yo*r$",input)
-print(result)
+# import re
+# input = 'yooooor'
+# result = re.search(r"^yo*r$",input)
+# print(result)
 
 
 #>>>>>>>>>>>>>>>>>(+)
-import re
-input = 'yooooor'
-result = re.search(r"^yo+r$",input)
-print(result)
+# import re
+# input = 'yooooor'
+# result = re.search(r"^yo+r$",input)
+# print(result)
 
 
 # #>>>>>>>>>>>>>>>>>(?)
-import re
-input = 'yasdor'
-result = re.search(r"yasdo?r",input)
-print(result)
+# import re
+# input = 'yasdor'
+# result = re.search(r"yasdo?r",input)
+# print(result)
 
 #>>>>>>>>>>>>>>>>({})
-import re
-input = 'iam mam'
-result = re.search(r"m{1,2}",input)
-print(result)
+# import re
+# input = 'iam mam'
+# result = re.search(r"m{1,2}",input)
+# print(result)
 
 #>>>>>>>>>>>>>>>([]{}) for find indiger number
-import re
-input = 'hi mom iam 262345asdf2345234'
-result_one_digit = re.search(r"[0-9]{1,1}",input)
-result_tree_digit = re.search(r"[0-9]{1,3}",input)
-print(result_one_digit,'\n',result_tree_digit)
+# import re
+# input = 'hi mom iam 262345asdf2345234'
+# result_one_digit = re.search(r"[0-9]{1,1}",input)
+# result_tree_digit = re.search(r"[0-9]{1,3}",input)
+# print(result_one_digit,'\n',result_tree_digit)
 
 # >>>>>>>>>>>>>>>(\A,\b)
-import re
+# import re
 # input = 'iam your son'
 # result = re.search(r'\Aiam your',input)
 # result2 = re.search(r'\byou',input)
 # print(result,result2)
 
-print(dir(re))
+# print(dir(re))
 
 
 
@@ -492,6 +486,18 @@ print(dir(re))
     
 # sample()
 
+def upper(func):
+    def inner(a):
+        result = func(a)
+        return result.upper()
+    return inner
+    
+
+@upper
+def name(a):
+    return  a.lower()
+
+print(name('Shammas'))
 
 #>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -609,3 +615,7 @@ print(dir(re))
 # result=x(1,2,3)
 # print(result(1))
  
+
+x = filter(lambda x:x*2,[1,2,3,4,5])
+print(x)
+print(list(x))
