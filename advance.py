@@ -166,11 +166,8 @@
 # fib_sequence = fibonacci()
 
 # print(next(fib_sequence))
-# print(next(fib_sequence))
-# print(next(fib_sequence))
-# print(next(fib_sequence))
-# print(next(fib_sequence))
-# print(next(fib_sequence))
+
+
 
 
 
@@ -199,14 +196,15 @@
 # print(new_list)
 
 # this is comprahentions >>>>>>>>>>>>
+# fruits = ['apple','bannana','orang','kiwi','cherry','mango']
 
 # new_list=(each_fruit for each_fruit in fruits if 'a' in each_fruit) # its working like generator
 # print(next(new_list))
 # print(next(new_list))
 # print(next(new_list))
 
-
 # new_list=[each_fruit for each_fruit in fruits if 'a' in each_fruit] #its list comprahention
+
 # new_list=tuple(each_fruit for each_fruit in fruits if 'a' in each_fruit) #its tuple comprahention
 # new_list={each_fruit for each_fruit in fruits if 'a' in each_fruit} #set comprehetion
 # new_list={each_fruit:'5' for each_fruit in fruits if 'a' in each_fruit} # dictionarty comprehetion
@@ -619,3 +617,89 @@
 # x = filter(lambda x:x*2,[1,2,3,4,5])
 # print(x)
 # print(list(x))
+
+
+
+
+#..............................................................
+
+
+# x=[1,23,45,6]
+
+# new=[y for y in x if y%2==0]
+# print(new)
+
+
+# def my_decorator(func):
+    
+#     def wrapper():
+#         print('wraper function')
+#         result = func()
+#         return result
+    
+#     print('decerator function')
+#     return wrapper
+
+
+# @my_decorator
+# def my_function():
+#     return print('chiled function')
+
+
+# my_function()
+
+
+
+# def add_two_decorator(func):
+#     def wrapper(*args, **kwargs):
+#         result = func(*args, **kwargs)
+#         return result + 2
+#     return wrapper
+
+# @add_two_decorator
+# def add_numbers(a, b):
+#     return a + b
+
+# result = add_numbers(5, 7)
+# print(result)
+
+
+
+# def sum(x):
+#     def inner(i,j):
+#         result = x(i,j)
+#         return ('fiyas kona'+str(result*2))
+#     return inner
+
+
+# @sum
+# def add_numbers(a,b):
+#     return a+b
+
+# print(add_numbers(10,16))
+
+
+
+
+
+
+# li=[1,2,3,4,5,6,7]
+# result= [x for x in li if x%2==0]
+
+# print(result)
+# resutt=filter(lambda x: x %2==0,li)
+
+# print(list(resutt))
+
+
+
+
+
+
+
+
+
+
+
+
+
