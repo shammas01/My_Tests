@@ -164,31 +164,31 @@
 
 #12-10-23............................
 
-x=(1,2,3)
-y=x
-x=(1,2,3,4,5)
-print(x,y)
+# x=(1,2,3)
+# y=x
+# x=(1,2,3,4,5)
+# print(x,y)
  
-def sorting_number(number):
-    number.sort()
-    return number
+# def sorting_number(number):
+#     number.sort()
+#     return number
 
-number=[78,545,67,343,2,355,23,55]
-print(number)
-result=sorting_number(number)
-print(number)
+# number=[78,545,67,343,2,355,23,55]
+# print(number)
+# result=sorting_number(number)
+# print(number)
 
 
-x=(1,2,3,4,5,6)
-print(x.index(1))
+# x=(1,2,3,4,5,6)
+# print(x.index(1))
 
 
 
 # list_comprehention.......................
 
-x=[[j for j in range(5)] for i in range(5) if i%2==0]
+# x=[[j for j in range(5)] for i in range(5) if i%2==0]
 
-print(x)
+# print(x)
 
 # function_argument_accessing....................
 def complicated_functio(x,z=10,y=None):
@@ -199,9 +199,27 @@ complicated_functio(2,6)
 
 #>>>>>>>>>
 
-def complicated_function(x,y, *args):
-    print(x,y,args)
+def complicated_function(x,y, *args, **kwargs):
+    print(x,y,args,kwargs)
     pass
 
 
-complicated_function(1,2,34,4,556,6,67,76,6,6)
+# complicated_function(1,2,34,4,556,6,a=True,b='shammas',c=False)
+
+#>>>>>>>>>
+def compi_next(a,b,c=True,d=False):
+    print(a,b,c,d)
+    pass
+
+compi_next(1,2,'hello','cool')
+
+
+#if __name__=="__main__".............................
+
+def add(a,b):
+    result=a+b
+    return print(result)
+
+if __name__=="__main__":
+    add(10,29)
+print('iam datatyp file')
