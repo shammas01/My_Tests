@@ -191,35 +191,131 @@
 # print(x)
 
 # function_argument_accessing....................
-def complicated_functio(x,z=10,y=None):
-    print(x,y,z)
-    pass
+# def complicated_functio(x,z=10,y=None):
+#     print(x,y,z)
+#     pass
 
-complicated_functio(2,6)
+# complicated_functio(2,6)
 
 #>>>>>>>>>
 
-def complicated_function(x,y, *args, **kwargs):
-    print(x,y,args,kwargs)
-    pass
+# def complicated_function(x,y, *args, **kwargs):
+#     print(x,y,args,kwargs)
+#     pass
 
 
 # complicated_function(1,2,34,4,556,6,a=True,b='shammas',c=False)
 
 #>>>>>>>>>
-def compi_next(a,b,c=True,d=False):
-    print(a,b,c,d)
-    pass
+# def compi_next(a,b,c=True,d=False):
+#     print(a,b,c,d)
+#     pass
 
-compi_next(1,2,'hello','cool')
+# compi_next(1,2,'hello','cool')
 
 
-#if __name__=="__main__".............................
+#if __name__=="__main__".............................imported in  others.py
 
-def add(a,b):
-    result=a+b
-    return print(result)
+# def add(a,b):
+#     result=a+b
+#     return print(result)
 
-if __name__=="__main__":
-    add(10,29)
-print('iam datatyp file')
+# if __name__=="__main__":
+#     add(10,29)
+# print('iam datatyp file')
+
+
+
+
+#
+# def func(x):
+#     result = x**x
+#     return print(result)
+
+# func(3)
+
+
+# find fibnochi sequence
+
+# def fibnochi(n):
+#     sequnce=[0,1]
+#     while len(sequnce) < n:
+#         result=sequnce[-1]+sequnce[-2]
+#         sequnce.append(result)
+#     return print(sequnce[:n]) 
+    
+# input=int(input('enter a number'))
+# fibnochi(input)
+
+
+
+# def fibnochi(n):
+#     sequence=[0,1]
+#     while len(sequence) < n :
+#         result=sequence[-1] + sequence[-2]
+#         sequence.append(result)
+#     return print(sequence)
+
+# fibnochi(5)
+
+
+# def reverse(a):
+#     # list1=[]
+#     x=''
+#     for i in a:
+#         x = i + x
+#     return print(x)
+
+# reverse("abcde")
+
+
+
+
+
+# a=["shammas","malayalam"]
+
+# new=[x for x in a if x == x[::-1]]
+
+# print(new)
+
+
+#count of string............
+# def count_of_string(n):
+#     dic={}
+#     for i in n:
+#         if i in dic:
+#             dic[i] += 1
+#         else:
+#             dic[i] = 1
+    
+#     for i , count in dic.items():
+#         print(i,':',count)
+
+# count_of_string('muhammed shammas')      
+
+
+# def palindrom(n):
+#     st=''
+#     for i in n:
+#         st = i + st
+#     if n == st:
+#         print('palindrom')
+#     else:
+#         print("not palindrom")
+
+
+# palindrom('malayalam')
+
+
+
+def remove_even_numbers(*args):
+    li=[]
+    for i in args:
+        if i%2==1:
+            li.append(i)
+    print(li)
+
+
+
+remove_even_numbers(1,2,3,4,5)
+
