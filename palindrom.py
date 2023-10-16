@@ -50,3 +50,26 @@
 # print(empty_list)
 
 
+
+
+
+# gap=li[0]-li[1]
+
+# for i in range(1,len(li)-1):
+#     if li[i+1] - li[i] != gap:
+#         print("false")
+#         break
+#     else:
+#         print("true")
+
+
+    
+# li.sort()
+# # print(li[1])
+# l1=[]
+# for i in li:
+#     if i not in l1:
+#         l1.append(i)
+
+# print(l1[1])
+     

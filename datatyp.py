@@ -308,14 +308,53 @@
 
 
 
-def remove_even_numbers(*args):
-    li=[]
-    for i in args:
-        if i%2==1:
-            li.append(i)
-    print(li)
+# def remove_even_numbers(*args):
+#     li=[]
+#     for i in args:
+#         if i%2==1:
+#             li.append(i)
+#     print(li)
+
+# remove_even_numbers(1,2,3)
 
 
 
-remove_even_numbers(1,2,3,4,5)
+# remove dublications
 
+# l1=[1,2,3,4,5,5,4,3,5]
+# l2=[1,2,3,4,5,5,6,9,8,8,7,6]
+
+
+# new=[]
+# same=[]
+
+# for i in l2:
+#     if i not in new:
+#         new.append(i)
+#     else:
+#         same.append(i)
+
+# print(new,same)
+
+
+# lis=[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17]
+
+# for i in range(len(lis)):
+#     if lis[i] % 5 != 0:
+       
+#         lis[i]=5
+#     else:
+#         lis[i]=i+1
+
+# print(lis)
+
+# strs = ["dog","racecar","car"]
+
+# print(sorted(strs))
+
+n=5
+while n is not None:
+    i=[]
+    i.append(n)
+    
+print(i)
