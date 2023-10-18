@@ -72,4 +72,16 @@
 #         l1.append(i)
 
 # print(l1[1])
-     
+
+
+#........................
+def palindrom(n):
+    
+    tr1=''
+
+    for i in n:
+        tr1 = i +tr1
+    
+    return n == tr1 
+
+print(palindrom('malayalam'))
