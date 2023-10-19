@@ -68,18 +68,7 @@
 
 
 
-#
 
 
-a={"banana","apple","orange","mango"}
-b={"kiwi","apple","orange"}
 
-print(a.union(b)) # for add 2 sets
-print(a.difference(b)) # unique elements in 'a' between in 
-print(a.intersection(b))
-
-# a.add("shammas")
-# a.remove("orange")
-
-# print(a)
 
