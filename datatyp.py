@@ -227,7 +227,7 @@
 
 
 
-#
+
 # def func(x):
 #     result = x**x
 #     return print(result)
@@ -376,3 +376,31 @@
 
 
 # coun_of_string('shammas')
+
+
+# class middleware:
+
+#     def __init__(self,get_response):
+#         self.get_response = get_response
+
+
+#     def __call__(self,request):
+#         response = self.get_response(request)
+
+#         return response
+    
+
+def decor(orginal):
+
+    def inner(j,i):
+        print(j*i)
+        return orginal(j,i)
+    
+    return inner
+
+@decor
+def sample(x,y):
+    return x+y
+
+
+print(sample(5,5))
