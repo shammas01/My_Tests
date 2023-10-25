@@ -385,22 +385,44 @@
 
 
 #     def __call__(self,request):
+
 #         response = self.get_response(request)
 
 #         return response
     
 
-def decor(orginal):
 
-    def inner(j,i):
-        print(j*i)
-        return orginal(j,i)
+# def decor(orginal):
+
+#     def inner(j,i):
+#         print(j*i)
+#         return orginal(j,i)
     
-    return inner
+#     return inner
 
-@decor
-def sample(x,y):
-    return x+y
+# @decor
+# def sample(x,y):
+#     return x+y
+
+# print(sample(5,5))
+
+# print("ok bi")
+# result=decor(sample)
+# print(result(5,5))
 
 
-print(sample(5,5))
+
+#...................
+
+# l1=[1,2,3,4,5]
+
+# l2=['a','b','c','d','e']
+
+
+# my_dic=dict(zip(l2,l1))
+# print(my_dic)
+
+
+set1={1,3,5,7,2,4}
+set1.add()
+print(set1)

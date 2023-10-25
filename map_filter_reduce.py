@@ -109,26 +109,26 @@
 
 #....................................................................................................
 
-lis=[1,2,3,4,5,6,7,8,9,10]
+# lis=[1,2,3,4,5,6,7,8,9,10]
 
-lis2=[]
-for i in lis:
-    lis2 = [i] + lis2
+# lis2=[]
+# for i in lis:
+#     lis2 = [i] + lis2
 
-print(lis2)
-
-
-class Solution(object):
-    def mergeTwoLists(self, list1, list2):
-        merge_list=list1+list2
-        sort_list=sorted(merge_list)
-        return sort_list
+# print(lis2)
 
 
-solution=Solution()
-list1 = [1, 2, 4]
-list2 = [1, 3, 4]
+# class Solution(object):
+#     def mergeTwoLists(self, list1, list2):
+#         merge_list=list1+list2
+#         sort_list=sorted(merge_list)
+#         return sort_list
 
-print(solution.mergeTwoLists(list1,list2))
+
+# solution=Solution()
+# list1 = [1, 2, 4]
+# list2 = [1, 3, 4]
+
+# print(solution.mergeTwoLists(list1,list2))
 
 
